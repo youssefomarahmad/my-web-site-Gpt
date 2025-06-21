@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>موقعي الشخصي</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+      margin: 0;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 20px;
+      width: 80%;
+      margin: auto;
+    }
+
+    .buttons a {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #00adb5;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #007b80;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f96d00;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #c44d00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>أهلاً، أنا يوسف!</h1>
+    <p id="dynamicText">ده أول موقع ليا مرفوع على GitHub Pages 💻🚀</p>
+    <div class="buttons">
+      <a href="https://facebook.com" target="_blank">فيسبوك</a>
+      <a href="https://instagram.com" target="_blank">إنستجرام</a>
+    </div>
+    <button onclick="changeText()">اضغط هنا</button>
+  </div>
+
+  <script>
+    function changeText() {
+      document.getElementById("dynamicText").textContent = "نورت الموقع يا باشا 😎";
+    }
+  </script>
+</body>
+</html>
